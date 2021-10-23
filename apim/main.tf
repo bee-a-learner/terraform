@@ -37,7 +37,6 @@ resource "azurerm_api_management" "apim" {
     lifecycle {
       ignore_changes = [hostname_configuration]
     }
-    depends_on = [ azurerm_api_management.apim ]
 }
 
 
